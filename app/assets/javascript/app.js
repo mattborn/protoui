@@ -1,6 +1,8 @@
-protoUI = angular.module('ProtoUI', ['ui-router']);
+var protoUI = angular.module('ProtoUI', ['ui-router']);
 
-protoUI.config(['$stateProvider', function($stateProvider, $locationProvider) {
+protoUI.config(['$stateProvider', '$locationProvider', function($stateProvider, $locationProvider) {
+
+  $locationProvider.html5Mode(true);
 
   $stateProvider.state('landing', {
     url: '/',
@@ -9,7 +11,8 @@ protoUI.config(['$stateProvider', function($stateProvider, $locationProvider) {
   })
 
 }]);
+  console.log("debug");
 
 protoUI.controller('Landing.controller', ['$scope', function($scope) {
-
+  console.log("landing controller");
 }]);

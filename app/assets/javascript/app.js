@@ -1,17 +1,19 @@
-var protoUI = angular.module('ProtoUI', ['ui-router']);
+var protoUI = angular.module('ProtoUI', ['ui.router']);
 
-protoUI.config(['$stateProvider', '$locationProvider', function($stateProvider, $locationProvider) {
+protoUI.config(function($stateProvider, $locationProvider) {
 
-  $locationProvider.html5Mode(true);
+  $locationProvider.html5Mode({
+    enabled: true,
+    requireBase: false
+  });
 
   $stateProvider.state('landing', {
     url: '/',
     controller: 'Landing.controller',
     templateUrl: '/app/templates/landing.html'
-  })
+  });
 
-}]);
-  console.log("debug");
+});
 
 protoUI.controller('Landing.controller', ['$scope', function($scope) {
   console.log("landing controller");

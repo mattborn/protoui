@@ -13,8 +13,18 @@ protoUI.config(function($stateProvider, $locationProvider) {
     templateUrl: '/app/templates/landing.html'
   });
 
+  $stateProvider.state('new', {
+    url: '/new',
+    controller: 'New.controller',
+    templateUrl: '/app/templates/new.html'
+  });
+
 });
 
 protoUI.controller('Landing.controller', ['$scope', function($scope) {
-  console.log("landing controller");
+  
+}]);
+
+protoUI.controller('New.controller', ['$scope', function($scope) {
+  
 }]);

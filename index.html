@@ -1,17 +1,49 @@
 <!DOCTYPE html>
 <html ng-app="ProtoUI">
-  <head>
-    <meta charset = "utf-8">
+
+<head>
+    <meta charset="utf-8">
     <title> Proto UI </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="app/assets/stylesheets/style.css">
-    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
+    <script src="/app/assets/javascript/app.js"></script>
+</head>
 
-    <script src = "/app/assets/javascript/app.js"></script>
-  </head>
-  <body>
-    <div ui-view></div>
-  </body>
+<body>
+    <nav>
+        <div class="top-nav">
+            <a href="#" class="brand-logo">Logo</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="sass.html">Refer colleauge</a></li>
+                <li><a href="components.html">Settings</a></li>
+                <li><a href="javascript.html">Help</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m3 l2 side-nav fixed">
+                <ul>
+                    <li class="logo">
+                        <a ui-sref="landing">
+                            <img src="http://previmedica.com/Portals/_default/Skins/Previmedica_2014/images/logo.png" alt="" style="height: 30px;">
+                        </a>
+                    </li>
+                    <br>
+                    <li><a ui-sref="new">New Patient</a></li>
+                    <li><a>My Patients</a></li>
+                    <li><a>Recipes</a></li>
+                    <li><a>Something</a></li>
+                </ul>
+            </div>
+            <!-- Grey navigation panel -->
+            <div ui-view></div>
+        </div>
+    </div>
+</body>
+
 </html>

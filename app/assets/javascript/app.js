@@ -13,10 +13,16 @@ protoUI.config(function($stateProvider, $locationProvider) {
     templateUrl: '/app/templates/landing.html'
   });
 
-  $stateProvider.state('new', {
-    url: '/new',
-    controller: 'New.controller',
-    templateUrl: '/app/templates/new.html'
+  $stateProvider.state('newBasics', {
+    url: '/new-basics',
+    controller: 'NewBasics.controller',
+    templateUrl: '/app/templates/new-basics.html'
+  });
+
+  $stateProvider.State('newHealthHistory', {
+    url: '/new-health-history',
+    controller: 'NewHealthHistory.controller',
+    templateUrl: '/app/templates/new-health-history.html'
   });
 
 });
@@ -25,6 +31,10 @@ protoUI.controller('Landing.controller', ['$scope', function($scope) {
   
 }]);
 
-protoUI.controller('New.controller', ['$scope', function($scope) {
+protoUI.controller('NewBasics.controller', ['$scope', function($scope) {
   
+}]);
+
+protoUI.controller('NewHealthHistory.controller', ['$scope', function($scope) {
+
 }]);

@@ -32,7 +32,7 @@ protoUI.controller('Landing.controller', ['$scope', function($scope) {
 }]);
 
 protoUI.controller('NewBasics.controller', ['$scope', function($scope) {
-  
+ 
 }]);
 
 protoUI.controller('NewHealthHistory.controller', ['$scope', function($scope) {

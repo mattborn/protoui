@@ -1,10 +1,46 @@
 nav {
-background: rgba(182,182,237,1);
-background: -moz-linear-gradient(left, rgba(182,182,237,1) 0%, rgba(113,115,239,1) 21%, rgba(34,43,226,1) 51%, rgba(182,182,237,1) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(182,182,237,1)), color-stop(21%, rgba(113,115,239,1)), color-stop(51%, rgba(34,43,226,1)), color-stop(100%, rgba(182,182,237,1)));
-background: -webkit-linear-gradient(left, rgba(182,182,237,1) 0%, rgba(113,115,239,1) 21%, rgba(34,43,226,1) 51%, rgba(182,182,237,1) 100%);
-background: -o-linear-gradient(left, rgba(182,182,237,1) 0%, rgba(113,115,239,1) 21%, rgba(34,43,226,1) 51%, rgba(182,182,237,1) 100%);
-background: -ms-linear-gradient(left, rgba(182,182,237,1) 0%, rgba(113,115,239,1) 21%, rgba(34,43,226,1) 51%, rgba(182,182,237,1) 100%);
-background: linear-gradient(to right, rgba(182,182,237,1) 0%, rgba(113,115,239,1) 21%, rgba(34,43,226,1) 51%, rgba(182,182,237,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6b6ed', endColorstr='#b6b6ed', GradientType=1 );
+    background-color: #0d47a1;
+}
+
+ .side-nav li a {
+  color: #778899!important;
+  font-size: 1.2em;
+}
+
+.logo {
+  border-bottom: 1px solid #D6DBE0;
+}
+
+/* label color */
+
+.input-field label {
+    color: #000;
+}
+/* label focus color */
+
+.input-field input[type=text]:focus + label {
+    color: #000;
+}
+/* label underline focus color */
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+/* valid color */
+
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+/* invalid color */
+
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+/* icon prefix focus color */
+
+.input-field .prefix.active {
+    color: #000;
 }

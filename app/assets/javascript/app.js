@@ -19,7 +19,7 @@ protoUI.config(function($stateProvider, $locationProvider) {
     templateUrl: '/app/templates/new-basics.html'
   });
 
-  $stateProvider.State('newHealthHistory', {
+  $stateProvider.state('newHealthHistory', {
     url: '/new-health-history',
     controller: 'NewHealthHistory.controller',
     templateUrl: '/app/templates/new-health-history.html'
